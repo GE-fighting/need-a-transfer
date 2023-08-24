@@ -1,0 +1,12 @@
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "themes/LoveIt"]
+	path = themes/LoveIt
+	url = https://github.com/dillonzq/LoveIt
+[submodule "themes/hugo-theme-next"]
+	path = themes/hugo-theme-next
+	url = https://github.com/hugo-next/hugo-theme-next
+[submodule "themes/den"]
+	path = themes/den
+	url = https://github.com/shaform/hugo-theme-den
