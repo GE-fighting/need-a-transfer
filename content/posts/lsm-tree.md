@@ -1,7 +1,7 @@
 ---
 title: "LSM-tree 存储引擎"
 date: 2023-06-26T15:23:54+08:00
-draft: false
+draft: true
 tags : [                                    
      "LSM",
  ]
@@ -14,7 +14,9 @@ keywords : [
 ---
 
 ## 一、为什么会有lsm-tree，解决了什么问题
-    以顺序写解决随机写，提升写入速度
+
+
+
 
 ## 二、做了哪些工作
 
@@ -31,6 +33,6 @@ keywords : [
 ## Reference
 
 - https://frankma.me/posts/database/lsmtree/#lsm-tree-structure
-
 - http://blog.mrcroxx.com/posts/code-reading/leveldb-made-simple/1-architecture/
 - https://www.bilibili.com/video/BV1Zv411G7ty/?spm_id_from=333.999.0.0
+- lsm-tree综述-https://static.aminer.cn/storage/pdf/arxiv/18/1812/1812.07527.pdf
