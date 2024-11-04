@@ -1,0 +1,308 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'NA-TRANSFER'
+theme = 'FixIt'
+defaultContentLanguage = 'zh-cn'
+
+# Author config
+[author]
+  name = "geroge"
+  email = "1501790343@qq.com"
+  link = ""
+
+
+# -------------------------------------------------------------------------------------
+# Menu Configuration
+# See: https://fixit.lruihao.cn/documentation/basics/#menu-configuration
+# -------------------------------------------------------------------------------------
+
+[menu]
+  [[menu.main]]
+    identifier = "archives"
+    parent = ""
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Archives"
+    url = "/archives/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+    # FixIt 0.2.14 | NEW add user-defined content to menu items
+    [menu.main.params]
+      # add css class to a specific menu item
+      class = ""
+      # whether set as a draft menu item whose function is similar to a draft post/page
+      draft = false
+      # FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
+      icon = "fa-solid fa-archive"
+      # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
+      type = ""
+      # FixIt 0.3.9 | NEW whether to show the submenu item divider line
+      divided = false
+  [[menu.main]]
+    identifier = "categories"
+    parent = ""
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 2
+    [menu.main.params]
+      icon = "fa-solid fa-folder-tree"
+  [[menu.main]]
+    identifier = "tags"
+    parent = ""
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 3
+    [menu.main.params]
+      icon = "fa-solid fa-tags"
+
+
+# -------------------------------------------------------------------------------------
+# Markup related configuration in Hugo
+# See: https://gohugo.io/getting-started/configuration-markup/
+# --------------------------------------------------------------------------------
+[markup]
+  [markup.highlight]
+    codeFences = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  collection = "collections"
+
+
+
+# -------------------------------------------------------------------------------------
+# Theme Core Configuration
+# See: https://fixit.lruihao.cn/documentation/basics/#theme-configuration
+# ------------
+
+[params]
+  # FixIt 0.2.15 | CHANGED FixIt theme version
+  version = "0.3.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
+  # site description
+  description = ""
+  # site keywords
+  keywords = []
+  # site default theme ["light", "dark", "auto"]
+  defaultTheme = "auto"
+  # which hash function used for SRI, when empty, no SRI is used
+  # ["sha256", "sha384", "sha512", "md5"]
+  fingerprint = ""
+  # NEW date format
+  dateFormat = "2006-01-02"
+  # website images for Open Graph and Twitter Cards
+  images = []
+  # FixIt 0.2.12 | NEW enable PWA
+  enablePWA = false
+  # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
+  externalIcon = false
+  # FixIt 0.3.13 | NEW whether to capitalize titles
+  capitalizeTitles = true
+  # FixIt 0.3.0 | NEW whether to add site title to the title of every page
+  # remember to set up your site title in `hugo.toml` (e.g. title = "title")
+  withSiteTitle = true
+  # FixIt 0.3.0 | NEW title delimiter when the site title is be added to the title of every page
+  titleDelimiter = "-"
+  # FixIt 0.3.0 | NEW whether to add site subtitle to the title of index page
+  # remember to set up your site subtitle by `params.header.subtitle.name`
+  indexWithSubtitle = false
+  # FixIt 0.3.13 | NEW whether to show summary in plain text
+  summaryPlainify = false
+  # FixIt 0.2.14 | NEW FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
+  # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
+  disableThemeInject = false
+
+
+  [params.header]
+    desktopMode = "sticky"
+    mobileMode = "auto"
+    [params.header.title]
+      logo = "/images/icon.webp"
+      name = ""
+      pre = ""
+      post = ""
+      typeit = false
+    [params.header.subtitle]
+      name = ""
+      typeit = false
+  # FixIt 0.3.0 | NEW Archives page config (all pages of posts type)
+  [params.archives]
+    # special amount of posts in archives page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+
+
+  # Author Configuration
+  [params.author]
+    name = "geroge"
+    email = ""
+    link = ""
+    avatar = "/images/avatar.webp"
+
+  [params.home]
+    # LoveIt NEW | 0.2.0 amount of RSS pages
+    rss = 10
+    # Home page profile
+    [params.home.profile]
+      enable = true
+      # Gravatar Email for preferred avatar in home page
+      gravatarEmail = ""
+      # URL of avatar shown in home page
+      avatarURL = "/images/avatar.webp"
+      # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
+      title = ""
+      # subtitle shown in home page (HTML format is supported)
+      subtitle = "天予不取，反受其咎，时至不行，必受其殃"
+      # whether to use typeit animation for subtitle
+      typeit = true
+      # whether to show social links
+      social = true
+      # LoveIt NEW | 0.2.0 disclaimer (HTML format is supported)
+      disclaimer = ""
+    # Home page posts
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 6
+      # LoveIt DELETED | 0.2.0 replaced with hiddenFromHomePage in params.page
+      # default behavior when you don't set "hiddenFromHomePage" in front matter
+      defaultHiddenFromHomePage = false
+
+  # Social config about the author
+  [params.social]
+    GitHub = "GE-fighting"
+    Linkedin = ""
+    Twitter = "gerolt geroge"
+    # Instagram = "xxxx"
+    # Facebook = "xxxx"
+    # Telegram = "xxxx"
+    Medium = ""
+    Gitlab = ""
+    Youtubelegacy = ""
+    Youtubecustom = ""
+    Youtubechannel = ""
+    Tumblr = ""
+    Quora = ""
+    Keybase = ""
+    Pinterest = ""
+    Reddit = ""
+    Codepen = ""
+    FreeCodeCamp = ""
+    Bitbucket = ""
+    Stackoverflow = ""
+    Weibo = ""
+    Odnoklassniki = ""
+    VK = ""
+    Flickr = ""
+    Xing = ""
+    Snapchat = ""
+    Soundcloud = ""
+    Spotify = ""
+    Bandcamp = ""
+    Paypal = ""
+    Fivehundredpx = ""
+    Mix = ""
+    Goodreads = ""
+    Lastfm = ""
+    Foursquare = ""
+    Hackernews = ""
+    Kickstarter = ""
+    Patreon = ""
+    Steam = ""
+    Twitch = ""
+    Strava = ""
+    Skype = ""
+    Whatsapp = ""
+    Zhihu = ""
+    Douban = ""
+    Angellist = ""
+    Slidershare = ""
+    Jsfiddle = ""
+    Deviantart = ""
+    Behance = ""
+    Dribbble = ""
+    Wordpress = ""
+    Vine = ""
+    Googlescholar = ""
+    Researchgate = ""
+    Mastodon = ""
+    Thingiverse = ""
+    Devto = ""
+    Gitea = ""
+    XMPP = ""
+    Matrix = ""
+    Bilibili = ""
+    Discord = ""
+    DiscordInvite = ""
+    Lichess = ""
+    ORCID = ""
+    Pleroma = ""
+    Kaggle = ""
+    MediaWiki= ""
+    Plume = ""
+    HackTheBox = ""
+    RootMe= ""
+    Phone = ""
+    RSS = true # LoveIt NEW | 0.2.0
+
+
+
+# -------------------------------------------------------------------------------------
+# Output Format Definitions
+# See: https://gohugo.io/templates/output-formats/#output-format-definitions
+# -------------------------------------------------------------------------------------
+
+[outputFormats]
+  # FixIt 0.3.0 | NEW Options to make output /archives/index.html file
+  [outputFormats.archives]
+    path = "archives"
+    baseName = "index"
+    mediaType = "text/html"
+    isPlainText = false
+    isHTML = true
+    permalinkable = true
+    notAlternative = true
+  # FixIt 0.3.0 | NEW Options to make output /offline/index.html file
+  [outputFormats.offline]
+    path = "offline"
+    baseName = "index"
+    mediaType = "text/html"
+    isPlainText = false
+    isHTML = true
+    permalinkable = true
+    notAlternative = true
+  # FixIt 0.3.0 | NEW Options to make output readme.md file
+  [outputFormats.readme]
+    baseName = "readme"
+    mediaType = "text/markdown"
+    isPlainText = true
+    isHTML = false
+    notAlternative = true
+  # FixIt 0.3.0 | CHANGED Options to make output baidu_urls.txt file
+  [outputFormats.baidu_urls]
+    baseName = "baidu_urls"
+    mediaType = "text/plain"
+    isPlainText = true
+    isHTML = false
+    notAlternative = true
+  # FixIt 0.3.10 | NEW Options to make output search.json file
+  [outputFormats.search]
+    baseName = "search"
+    mediaType = "application/json"
+    rel = "search"
+    isPlainText = true
+    isHTML = false
+    permalinkable = true
