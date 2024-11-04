@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>存储引擎 - 标签 - NA-TRANSFER</title>
-    <link>http://localhost:1313/tags/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/</link>
+    <link>http://ge-fighting.github.io/tags/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/</link>
     <description>NA-TRANSFER</description>
     <generator>Hugo 0.136.5 &amp; FixIt v0.3.13</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Oct 2024 17:48:28 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ge-fighting.github.io/tags/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bitcask存储引擎</title>
-      <link>http://localhost:1313/posts/294fa0a/</link>
+      <link>http://ge-fighting.github.io/posts/294fa0a/</link>
       <pubDate>Tue, 29 Oct 2024 17:48:28 +0800</pubDate>
-      <guid>http://localhost:1313/posts/294fa0a/</guid>
-      <category domain="http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</category>
+      <guid>http://ge-fighting.github.io/posts/294fa0a/</guid>
+      <category domain="http://ge-fighting.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</category>
       <description>Bitcask存储引擎</description>
     </item>
   </channel>
